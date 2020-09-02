@@ -1,0 +1,245 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #232931 repeat;
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body,
+a {
+  color: #427eff;
+}
+#main {
+  width: 60em;
+  margin: 6em auto;
+}
+section {
+  font-size: 10px;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 40px;
+  color: #6D7587;
+  background-color: #232931;
+  /*box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.3), 
+              -2px -2px 4px 2px rgba(255, 255, 255, 1), 
+              inset -14px -14px 20px -10px rgba(0, 0, 0, 0.1),
+              inset 14px 14px 20px -10px rgba(255, 255, 255, 0.5) !important;  */
+              box-shadow: -2px -2px 8px 1px rgba(161,161,201,0.2), 
+              2px 2px 8px 1px rgba(12, 12, 12, 0.8);
+  transition: box-shadow .25s ease !important;
+  padding: 3em;
+  margin: 4em 0;
+}
+section.two.columns {
+  width: 20em;
+  display: inline-block;
+}
+section.two.columns.a {
+  float: left;
+}
+section.two.columns.b {
+  float: right;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+h1 {
+  color: #427eff;
+  font-size: 4em;
+  text-align: center;
+  text-transform: absolute;
+}
+h1:only-child {
+  margin-bottom: 0;
+}
+h2 {
+  color: #427eff;
+  font-size: 3.2em;
+  text-align: center;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 1.6em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 1.5em 0;
+  padding: 1em 0;
+  
+}
+h1 a {
+  color: rgb(66, 126, 255);
+  
+}
+h1 + p,
+h2 + ul,
+h2 + ol,
+h3 {
+  
+  padding-top: 1em;
+}
+h1 + p {
+  font-size: 1.6em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 -0.75em 0;
+}
+ul,
+ol {
+  font-size: 1.6em;
+  margin: 0;
+  padding-left: 1em;
+}
+li {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 1em 0;
+  list-style: none;
+  display: block;
+  clear: both;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+li a,
+li label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+li input[type='checkbox'],
+li input[type='radio'] {
+  margin-right: 1.6em;
+}
+li input[type='checkbox']:checked + a,
+li input[type='radio']:checked + a,
+li input[type='checkbox']:checked + label,
+li input[type='radio']:checked + label {
+  color: rgb(66, 126, 255);
+}
+li aside {
+  /* reset font size */
+
+  font-size: 0.625em;
+  /* hide by default */
+
+  display: none;
+}
+li aside p {
+  display: block;
+  font-size: 1.6em;
+  font-weight: 300;
+  text-align: center;
+  margin: 1.5em 0;
+  padding: 1em 0;
+}
+li aside p input[type='radio'] {
+  margin-right: 0.8em;
+  margin-left: 1.6em;
+}
+li aside p input[type='radio']:first-of-type {
+  margin-left: 0;
+}
+li aside p input[type='radio'] + label {
+  cursor: pointer;
+}
+li aside ol {
+  padding: 0 0 0 0;
+}
+li aside legend {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.6em;
+  font-style: italic;
+}
+li aside ol:empty ~ legend {
+  display: block;
+}
+li aside li {
+  display: block;
+  text-align: center;
+}
+li aside input[type='text'] {
+  display: inline-block;
+  width: 85%;
+}
+li aside input[type='text'].error {
+  background: rgb(255, 0, 0);
+}
+li aside input[type='text'] + a {
+  display: inline-block;
+  line-height: 1.6em;
+  margin-left: 0.8em;
+}
+li aside a.add {
+  display: inline-block;
+  overflow: hidden;
+  background: transparent url('../img/icon_sprite.png') no-repeat 0 -64px;
+  text-indent: -999999px;
+  width: 32px;
+  height: 32px;
+}
+li aside a.add:hover {
+  background-position: -32px -64px;
+}
+li aside a.remove {
+  display: inline-block;
+  overflow: hidden;
+  background: transparent url('../img/icon_sprite.png') no-repeat -4px -36px;
+  text-indent: -999999px;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -webkit-transition: -webkit-transform 400ms ease-out;
+}
+li aside a.remove:hover {
+  background-position: -36px -36px;
+}
+li aside .hidden a.remove {
+  -webkit-transform: rotate(360deg) scale(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+}
+li a.filters {
+  padding-left: 1em;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent url('../img/icon_sprite.png') no-repeat -6px -6px;
+  text-indent: -999999px;
+  width: 16px;
+  height: 16px;
+}
+li a.filters:hover {
+  background-position: -38px -6px;
+}
+a {
+  text-decoration: none;
+  /*-webkit-transition:	color 125ms ease-in-out;*/
+
+}
+a:hover,
+label:hover {
+  /*-webkit-transition:	color 50ms ease-in-out;*/
+
+  color: rgb(255, 255, 255);
+}
+.feedback {
+  display: none;
+}
+.feedback.success {
+  color: #c7f464;
+}
+.feedback.error {
+  color: #c44d58;
+}
