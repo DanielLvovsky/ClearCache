@@ -8,7 +8,7 @@ A chrome extension that clears passwords, cache, cookies, browsing history, etc.
 
 ## Current Features
 
-+ **Options for choosing what the user wants to be cleard**
++ **Options for choosing what the user wants to be cleared**
 
 + **Neumorphic UI**
 
